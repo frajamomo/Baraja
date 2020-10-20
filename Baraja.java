@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class Baraja {
@@ -10,17 +11,21 @@ public class Baraja {
         Valor[] valores = Valor.values();
 
         this.cartas = new ArrayList<>();
+
         for (Palo palo : palos){
             for (Valor valor : valores){
                 Carta carta = new Carta(valor, palo);
                 this.cartas.add(carta);
             }
-
         }
     }
 
     public String toString(){
         return cartas.toString();
+    }
+
+    public void Barajear(){
+        Collections.shuffle(cartas);
     }
 
 
