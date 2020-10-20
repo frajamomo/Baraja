@@ -15,7 +15,6 @@ public class Carta {
         return palo;
     }
 
-    @Override
     public String toString(){
         StringBuilder output = new StringBuilder();
         output.append(palo.getValue());
