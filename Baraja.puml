@@ -1,0 +1,12 @@
+@startuml
+
+class Baraja
+class Carta
+class Palo
+class Valor
+
+Baraja "1" *-- "n" Carta
+Carta "1" *-- "n" Palo
+Carta "1" *-- "n" Valor
+
+@enduml
